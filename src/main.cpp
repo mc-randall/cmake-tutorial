@@ -1,9 +1,14 @@
 #include <iostream>
 
+#include "libMessage/message.h"
+
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    cout << "Main program start" << endl;
+    Message message;
+
+    message.print("Main program start");
+
     return 0;
 }
