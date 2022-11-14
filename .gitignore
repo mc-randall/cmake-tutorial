@@ -1,6 +1,8 @@
 # IDE project files
 .vscode
 
-# Exclude build folder
+# Exclude build-tree folder
 build
 
+# Exclude meta data from CMake
+CMakeFiles
