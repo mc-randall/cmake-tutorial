@@ -1,5 +1,5 @@
 # IDE project files
-.vscode
+#.vscode
 
 # Exclude build-tree folder
 build

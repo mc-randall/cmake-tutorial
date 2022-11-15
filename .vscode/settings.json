@@ -1,0 +1,9 @@
+{
+    "TARGET_HOST_NAME": "mskxilinxscav2",
+    "DEBUG_PORT": "2345",
+    "BINARY": "./build/cmake-tutorial.elf",
+    "cmake.cmakePath": "/opt/petalinux/2020.2/sysroots/x86_64-petalinux-linux/usr/bin/cmake",
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}

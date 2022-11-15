@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: configure",
+			"command": "configure",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
+		},
+		{
+			"label": "Print Environment Variables",
+			"type": "shell",
+			"command": "printenv",
+			"args": [],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "Deploy",
+			"type": "shell",
+			"command": "scp",
+			"args": [
+				"${config:BINARY}",
+				"root@${config:TARGET_HOST_NAME}:/home/root"
+			]
+		},
+		{
+			"label": "SSH Connection",
+			"type": "shell",
+			"command": "ssh",
+			"args": [
+				"root@${config:TARGET_HOST_NAME}"
+			]
+		},
+		{
+			"label": "Launch GDB Server",
+			"type": "shell",
+			"command": "gdbserver",
+			"args": [
+				":${config:DEBUG_PORT}",
+				"/home/root/cmake-tutorial.elf"
+			],
+			"dependsOn": "SSH Connection",
+			"presentation": {
+				"close": true
+			}
+		}
+
+		
+	]
+}
