@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Message::Message(/* args */)
+Message::Message(string message) : m_message(message)
 {
 }
 
@@ -14,7 +14,7 @@ Message::~Message()
 {
 }
 
-void Message::print(string message)
+void Message::print()
 {
-    cout << message << endl;
+    cout << m_message << endl;
 }

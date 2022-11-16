@@ -4,9 +4,9 @@
 class Message
 {
 private:
-    /* data */
+    std::string m_message; /* data */
 public:
-    Message(/* args */);
+    Message(std::string message);
     ~Message();
-    void print(std::string message);
+    void print();
 };

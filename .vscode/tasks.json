@@ -1,6 +1,6 @@
 {
 	"version": "2.0.0",
-	"tasks": [
+	/* 	"tasks": [
 		{
 			"type": "cmake",
 			"label": "CMake: configure",
@@ -51,5 +51,5 @@
 		}
 
 		
-	]
+	] */
 }
